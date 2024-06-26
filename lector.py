@@ -89,7 +89,7 @@ def update_device_info():
 
 def update_device_image(model_identifier):
     try:
-        img = Image.open(f'images/{model_identifier}.png')
+        img = Image.open(f'assets/images/{model_identifier}.png')
         img = img.resize((200, 400), Image.LANCZOS)  # Redimensionar la imagen
         img = ImageTk.PhotoImage(img)
         image_label.config(image=img)
