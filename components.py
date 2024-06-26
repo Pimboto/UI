@@ -43,6 +43,7 @@ def create_cards():
                                 leading=ft.Icon(ft.icons.APPS),
                                 title=ft.Text("Total Processes"),
                                 subtitle=ft.Text("1,234", size=30, weight=ft.FontWeight.W_800),
+                
                             ),
                         ]
                     ),
@@ -80,7 +81,8 @@ def create_cards():
                     ),
                     width=250,
                     padding=20,
-                )
+                ),
+                color="#14452f"
             ),
             ft.Card(
                 variant=ft.CardVariant.FILLED,
@@ -96,7 +98,8 @@ def create_cards():
                     ),
                     width=250,
                     padding=20,
-                )
+                ),
+                color="#720714"
             ),
         ],
         height=500,
@@ -244,7 +247,7 @@ def create_table(data):
 
     return ft.DataTable(
         width=800,
-        border=ft.border.all(1.5, "#dce4e4"),
+        border=ft.border.all(1.5, "#66545e"),
         border_radius=5,
         columns=[
             ft.DataColumn(ft.Text("ID")),

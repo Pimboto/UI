@@ -83,9 +83,9 @@ async def monitor_device(page, info_label):
         await asyncio.sleep(1)  # Verificar cada 1 segundo
 
 async def main(page: ft.Page):
-    page.theme_mode = ft.ThemeMode.LIGHT
+    page.theme_mode = ft.ThemeMode.DARK
     page.appbar = ft.CupertinoAppBar(
-        border=ft.border.only(bottom=ft.border.BorderSide(1.5, "#dce4e4")),
+        border=ft.border.only(bottom=ft.border.BorderSide(1.5, "#66545e")),
         middle=ft.Text("iOS Tinder Bot"),
     )
 
